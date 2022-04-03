@@ -1,3 +1,3 @@
-# DevastMod.github.io
+# ﹙HypR﹚Devast.io Modded
 
-![alt text](https://github.com/[DevastMod]/[DevastMod.github.io]/img/HypR-Modded-Github.png?raw=true)
+![DevastMod.github.io](https://raw.githubusercontent.com/DevastMod/DevastMod.github.io/main/img/HypR-Modded-Github.png)
