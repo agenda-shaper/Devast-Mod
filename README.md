@@ -3,6 +3,6 @@
 Leader -﹙HypR﹚𐍅ᗩᗰᗴƬᗴ    Co-Leader -﹙HypR﹚Ҝι尺ιｔｏ 
   
 Members:   
-﹙HypR﹚𝕄𝕀𝕏   ﹙HypR﹚ᗰᗩᑎᗩǤᗴᖇ  
+﹙HypR﹚𝕄𝕀𝕏  | ﹙HypR﹚ᗰᗩᑎᗩǤᗴᖇ  
 
 ![DevastMod.github.io](https://raw.githubusercontent.com/DevastMod/DevastMod.github.io/main/img/HypR-Modded-Github.png)
