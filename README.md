@@ -1,5 +1,5 @@
 # <a href="https://devastmod.github.io/" class="button big">Play Devast.io Modded</a>
-Clan Tag:  
+**Clan Tag:**  
 ```diff
 ﹙HypR﹚
 ```     
