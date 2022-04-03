@@ -1,5 +1,6 @@
 # <a href="https://devastmod.github.io/" class="button big">Play Devast.io Modded</a>
-﹙HypR﹚Clan   
+```diff
++﹙HypR﹚Clan```   
  Leader  
  ```﹙HypR﹚𐍅ᗩᗰᗴƬᗴ```  
 Co-Leader  
