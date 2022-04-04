@@ -33,6 +33,7 @@
     var WMWmn = 1;
     var wVmNW = 1;
     var nWWnW = 0;
+    var autorunCheck;
     var wN = (function() {
         var wmWnm = 5;
         var nnW = 0;
@@ -2209,10 +2210,7 @@
 
         function srvshift() {
             var shift = keys.shiftgo();
-            /*if (autorun.mv.x == minimap.mv.x)
-            {
-            }*/
-            if (shift !== nnvmV ) {
+            if (shift !== nnvmV) {
                 vVw = VmN;
                 win.console.log("sendShift", shift);
                 nnvmV = shift;
@@ -9735,13 +9733,17 @@
             if (autorun.mw() === 1)
             {
                 vnm = 1;
-                if (autorun.mv.x != minimap.mv.x) 
+                if (autorunCheck !== 1)
                 {
-                    autorun.mv.x = minimap.mv.x;
+                    autorunCheck = 1;
+                    websocket.send(win.JSON.stringify([7, autorunCheck]));
+                    SERVG.socket[SERVG.ME.id].text.push("Auto Run Enabled");
                 }
                 else
                 {
-                    autorun.mv.x = minimap.mv.x + win.Math.floor(10 * mn);
+                    autorunCheck = 0;
+                    websocket.send(win.JSON.stringify([7, autorunCheck]));
+                    SERVG.socket[SERVG.ME.id].text.push("Auto Run Disabled");
                 }
             }
 
@@ -10296,7 +10298,7 @@
                         if ((SERVG.ME.WMnWN === 1) && (nMnnm.value[0] === '!')) {
                             if (nMnnm.value === '!pos')
                             {
-                                SERVG.socket[SERVG.ME.id].text.push((win.Math.floor(SERVG.ME.x) + " : ") + win.Math.floor(SERVG.ME.y));
+                                SERVG.socket[SERVG.ME.id].text.push(keys.shiftgo());
                                 
                             }
                             else {
