@@ -2137,17 +2137,16 @@
 
         function PlayThirdPart() {
             wvwWM = 0;
-            nv.state = 0; //nMV.WWvNw + (nv.state & (nMV.NnNMV | nMV.wNVMw));
+            nMV.WWvNw + (nv.state & (nMV.NnNMV | nMV.wNVMw));
             connectsrv();
         };;
 
         function PlayNext(nick, MMm) {
-            //if (((nv.state & nMV.WWvNw) === 0) && ((nv.state & nMV.mWWwm) === 0)) {
-                nick = "testSuccess";
+            if (((nv.state & nMV.WWvNw) === 0) && ((nv.state & nMV.mWWwm) === 0)) {
                 clint.setItem("nickname", nick);
                 clint.setItem("skin", MMm);
                 PlayThirdPart();
-            //}
+            }
         };;
 
         function mnnMw() {
@@ -2301,8 +2300,8 @@
                     vwnNv(Nv.data);
             };
             websocket.onopen = function(Nv) {
-                //MmnWW = -1;
-                //vVw = VmN;
+                MmnWW = -1;
+                vVw = VmN;
                 clrtimeout();
                 websocket.send(win.JSON.stringify(datatosrv(dat)));
                 time = win.setTimeout(function() {
@@ -2352,8 +2351,8 @@
                     vwnNv(Nv.data);
             };
             websocket.onopen = function(Nv) {
-                //MmnWW = -1;
-                //vVw = VmN;
+                MmnWW = -1;
+                vVw = VmN;
                 clrtimeout();
                 websocket.send(win.JSON.stringify(datatosrvManual(dat)));
                 time = win.setTimeout(function() {
