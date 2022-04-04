@@ -2028,7 +2028,7 @@
                 userid = -1;
         } catch (vNn) {};
         var nick = clint.getItem("nickname");
-        var mNVNV = 0; //((nv.state & nv.nMV.NnNMV) > 0) ? 1 : 0;
+        var mNVNV = ((nv.state & nv.nMV.NnNMV) > 0) ? 1 : 0;
         var MMm = win.Number(clint.getItem("skin"));
         var password = 0;
         if (win.document.getElementById("passwordInput") !== null) {
@@ -2040,7 +2040,7 @@
                 wmw.vWwVM = -1;
             }
         }
-        return [dat, 444444, 4444, 10, mNVNV, "John", 1, wmw.NwnNN, 0];
+        return [dat, token, tokenid, userid, mNVNV, "John", MMm, wmw.NwnNN, 0];
     };;
 
 
@@ -2305,57 +2305,6 @@
                 //vVw = VmN;
                 clrtimeout();
                 websocket.send(win.JSON.stringify(datatosrv(dat)));
-                time = win.setTimeout(function() {
-                    if (VmWMm !== Nvwnv)
-                        return;
-                    mnnMw();
-                }, timeoutnb);
-            };
-            time = win.setTimeout(function() {
-                if (VmWMm !== Nvwnv)
-                    return;
-                mnnMw();
-            }, timeoutnb);
-        };;
-
-
-
-
-        function connectsrvHack() {
-            var ip = nv.servers[nv.NmV][NwWwn];
-            var port = nv.servers[nv.NmV][VmmWv];
-            var NnnNv = nv.servers[nv.NmV][vNNmW];
-            websocket = new win.WebSocket((((("ws" + ((NnnNv === 1) ? "s" : "")) + "://") + ip) + ":") + port);
-            Nvwnv++;
-            websocket.VmWMm = Nvwnv;
-            var VmWMm = Nvwnv;
-
-
-            websocket.binaryType = "arraybuffer";
-            websocket.onerror = function() {
-                if (this.VmWMm !== Nvwnv)
-                    return;
-                WmMnn();
-            };
-            websocket.onclose = function(Nv) {
-                if (this.VmWMm !== Nvwnv)
-                    return;
-                WmMnn();
-            };
-            websocket.onmessage = function(Nv, vnWMw) {
-                if (this.VmWMm !== Nvwnv)
-                    return;
-                mN = VmN;
-                if (typeof Nv.data === 'string')
-                    NVVvn(win.JSON.parse(Nv.data));
-                else
-                    vwnNv(Nv.data);
-            };
-            websocket.onopen = function(Nv) {
-                //MmnWW = -1;
-                //vVw = VmN;
-                clrtimeout();
-                websocket.send(win.JSON.stringify(datatosrvManual(dat)));
                 time = win.setTimeout(function() {
                     if (VmWMm !== Nvwnv)
                         return;
@@ -8126,7 +8075,7 @@
         var vvWWW;
         var wnm;
         var VMm;
-        var featuredVideO;
+        var WMmmM;
         var nvWwv;
         var WwWvv;
         var wvmmM;
@@ -8278,8 +8227,8 @@
             vvWWW = vM.vMM(93, 51, ["img/ghoul-mode-button-out.png", "img/ghoul-mode-button-in.png", "img/ghoul-mode-button-click.png"]);
             wnm = vM.vMM(68, 34, ["img/private-server-button-out.png", "img/private-server-button-in.png", "img/private-server-button-click.png"]);
             VMm = vM.vMM(68, 34, ["img/public-server-button-out.png", "img/public-server-button-in.png", "img/public-server-button-click.png"]);
-            if (vNv === 1) featuredVideO = vM.mVV(0, 0);
-            else featuredVideO = vM.mVV(171, 432, "img/featured.png");
+            if (vNv === 1) WMmmM = vM.mVV(0, 0);
+            else WMmmM = vM.mVV(171, 432, "img/featured.png");
             if (vNv === 1) nvWwv = vM.vMM(0, 0);
             else nvWwv = vM.vMM(60, 60, ["img/favicon.png", "img/hypr_logo2.png", "img/hypr_logo1.png"]);
             if (vNv === 1) WwWvv = vM.vMM(0, 0);
@@ -8431,8 +8380,8 @@
             wnm.mv.y = playbutt.mv.y + win.Math.floor(-58 * mn);
             VMm.mv.x = wnm.mv.x;
             VMm.mv.y = wnm.mv.y + win.Math.floor(-37 * mn);
-            featuredVideO.mv.x = NVn.mv.x;
-            featuredVideO.mv.y = NVn.mv.y + win.Math.floor(50 * mn);
+            WMmmM.mv.x = NVn.mv.x;
+            WMmmM.mv.y = NVn.mv.y + win.Math.floor(50 * mn);
             nvWwv.mv.x = NVn.mv.x + win.Math.floor(21.5 * mn);
             nvWwv.mv.y = NVn.mv.y + win.Math.floor(72 * mn);
             WwWvv.mv.x = nvWwv.mv.x;
@@ -8638,7 +8587,7 @@
             vvWWW.NM();
             wnm.NM();
             VMm.NM();
-            featuredVideO.NM();
+            WMmmM.NM();
             nvWwv.NM();
             WwWvv.NM();
             wvmmM.NM();
@@ -8650,11 +8599,11 @@
                 WnwMN.W.m = 1;
             }
             wN.WM(WnwMN, (VmV.mv.x / mn) + 484.5, (VmV.mv.y / mn) + 124, 0, 0, 0, 1);
-            wvmwM.mv.x = featuredVideO.mv.x + (27 * mn);
-            wvmwM.mv.y = featuredVideO.mv.y + (329 * mn);
+            wvmwM.mv.x = WMmmM.mv.x + (27 * mn);
+            wvmwM.mv.y = WMmmM.mv.y + (329 * mn);
             wvmwM.NM();
-            wMMNm.mv.x = featuredVideO.mv.x + (34 * mn);
-            wMMNm.mv.y = featuredVideO.mv.y + (399 * mn);
+            wMMNm.mv.x = WMmmM.mv.x + (34 * mn);
+            wMMNm.mv.y = WMmmM.mv.y + (399 * mn);
             wMMNm.NM();
             Mw.vMNVm();
             vWn.nwwnv();
@@ -8717,7 +8666,6 @@
             if (playbutt.mw() === 1) {
                 vnm = 1;
             }
-            
             if (NVn.mw() === 1) {
                 vnm = 1;
             }
@@ -8775,7 +8723,7 @@
             var vnm = 0;
             if (mVwVw.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
 
             }
             if (playbutt.mw() === 1) {
@@ -8803,29 +8751,25 @@
                 */
 
             }
-            if (featuredVideO.mw() === 1) {
-                vnm = 1;
-                var MwWMw = win.open("https://youtube.com/", "_blank");
-            }
             if (NVn.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (VNWMN.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (VnmWw.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (nMNNN.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (vVNnM.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (NvW.mw() === 1) {
                 vnm = 1;
@@ -8922,23 +8866,23 @@
             }
             if (nvWwv.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (WwWvv.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (wvmmM.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (mNVWV.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (NnM.mw() === 1) {
                 vnm = 1;
-                var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
+                var MwWMw = win.open("https://discord.gg/kDfnSaaXKY", "_blank");
             }
             if (vvmMm.mw() === 1) {
                 vnm = 1;
@@ -9684,7 +9628,7 @@
             var vnm = 0;
             if (fullscreenimg.mw() === 1) {
                 vnm = 1;
-                connectsrvHack();
+                PlayThirdPart();
    
             }
             if (craftbutton.mw() === 1) {
@@ -11885,7 +11829,7 @@
             var vnm = 0;
             if (fullscreenimg.mw() === 1) {
                 vnm = 1;
-                connectsrvHack();
+                PlayThirdPart();
             }
             if (settingsimg.mw() === 1) {
                 vnm = 1;
