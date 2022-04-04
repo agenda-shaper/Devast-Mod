@@ -33,7 +33,7 @@
     var WMWmn = 1;
     var wVmNW = 1;
     var nWWnW = 0;
-    var autorunCheck;
+    var autorunCheck = 0;
     var wN = (function() {
         var wmWnm = 5;
         var nnW = 0;
@@ -9733,18 +9733,21 @@
             if (autorun.mw() === 1)
             {
                 vnm = 1;
-                if (autorunCheck !== 1)
+                /*SERVG.socket[SERVG.ME.id].text.push("works");
+                if (autorunCheck > 0)
                 {
-                    autorunCheck = 1;
+                    SERVG.socket[SERVG.ME.id].text.push("AutoRun OFF");
+                    autorunCheck = 0;
                     websocket.send(win.JSON.stringify([7, autorunCheck]));
-                    SERVG.socket[SERVG.ME.id].text.push("Auto Run Enabled");
+                    
                 }
                 else
                 {
-                    autorunCheck = 0;
+                    SERVG.socket[SERVG.ME.id].text.push("AutoRun ON");
+                    autorunCheck = 1;
                     websocket.send(win.JSON.stringify([7, autorunCheck]));
-                    SERVG.socket[SERVG.ME.id].text.push("Auto Run Disabled");
-                }
+                    
+                }*/
             }
 
             if (minimapbutt.mw() === 1) {
@@ -10299,7 +10302,6 @@
                             if (nMnnm.value === '!pos')
                             {
                                 SERVG.socket[SERVG.ME.id].text.push(keys.shiftgo());
-                                
                             }
                             else {
                                 var mNvMM = nMnnm.value.split('!');
@@ -11586,7 +11588,7 @@
             mapbuildingbutton = vM.vMM(67, 67, ["img/map-building-button-out.png", "img/map-building-button-in.png", "img/map-building-button-click.png"]);
             zoombutton = vM.vMM(46.5, 46.5, ["img/zoom-button-out.png", "img/zoom-button-in.png", "img/zoom-button-click.png"]);
             unzoombutton = vM.vMM(46.5, 46.5, ["img/unzoom-button-out.png", "img/unzoom-button-in.png", "img/unzoom-button-click.png"]);
-            autorun = vM.vMM(80, 32, ["img/autorunOUT.png", "img/autorun.png", "img/autorun.png"]);
+            autorun = vM.vMM(80, 32, ["img/autorunOUT999.png", "img/autorun999.png", "img/autorun999.png"]);
             mapdeletebutton = vM.vMM(40, 40, ["img/map-delete-button-out.png", "img/map-delete-button-in.png", "img/map-delete-button-click.png"]);
             importbutton = vM.vMM(46.5, 46.5, ["img/import-button-out.png", "img/import-button-in.png", "img/import-button-click.png"]);
             copypastebutton = vM.vMM(46.5, 46.5, ["img/copy-paste-button-out.png", "img/copy-paste-button-in.png", "img/copy-paste-button-click.png"]);
@@ -11697,7 +11699,7 @@
             zoombutton.mv.y = (nwW - win.Math.floor(46.5 * mn)) + win.Math.floor(-5 * mn);
             unzoombutton.mv.x = zoombutton.mv.x + win.Math.floor(50 * mn);
             unzoombutton.mv.y = (nwW - win.Math.floor(46.5 * mn)) + win.Math.floor(-5 * mn);
-            autorun.mv.x = win.Math.floor(5 * mn);
+            autorun.mv.x = minimap.mv.x + win.Math.floor(5 * mn);
             autorun.mv.y = (nwW - win.Math.floor(46.5 * mn)) + win.Math.floor(-5 * mn);
             mapdeletebutton.mv.x = minimap.mv.x + win.Math.floor(89 * mn);
             mapdeletebutton.mv.y = minimap.mv.y + win.Math.floor(126 * mn);
