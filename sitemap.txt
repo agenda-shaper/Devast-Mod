@@ -1,2 +1,2 @@
-https://devastmod.github.io/
-http://devastmod.github.io/
+https://devastmod.github.io/index.html
+http://devastmod.github.io/index.html
