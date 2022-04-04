@@ -8803,10 +8803,6 @@
                 */
 
             }
-            if (featuredVideO.mw() === 1) {
-                vnm = 1;
-                var MwWMw = win.open("https://youtube.com/", "_blank");
-            }
             if (NVn.mw() === 1) {
                 vnm = 1;
                 var MwWMw = win.open("https://discord.com/invite/kDfnSaaXKY/", "_blank");
