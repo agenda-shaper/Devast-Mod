@@ -1,20 +1,20 @@
 [
-["139.162.190.42", "139-162-190-42.devast.io", "443", 1, "Europe 1", 
+["139.162.190.42", "139-162-190-42.devast.io", "443", 1, "Europe", 
 31
 ],
-["172.104.150.187", "172-104-150-187.devast.io", "443", 1, "Europe 2", 
+["172.104.150.187", "172-104-150-187.devast.io", "443", 1, "Europe", 
 27
 ],
-["45.33.59.165", "45-33-59-165.devast.io", "443", 1, "USA West 1", 
+["45.33.59.165", "45-33-59-165.devast.io", "443", 1, "USA West", 
 10
 ],
-["173.255.221.28", "173-255-221-28.devast.io", "443", 1, "USA West 2", 
+["173.255.221.28", "173-255-221-28.devast.io", "443", 1, "USA West", 
 12
 ],
-["69.164.210.207", "69-164-210-207.devast.io", "443", 1, "USA East 1", 
+["69.164.210.207", "69-164-210-207.devast.io", "443", 1, "USA East", 
 9
 ],
-["104.200.29.183", "104-200-29-183.devast.io", "443", 1, "USA East 2", 
+["104.200.29.183", "104-200-29-183.devast.io", "443", 1, "USA East", 
 13
 ],
 ["139.162.6.31", "139-162-6-31.devast.io", "443", 1, "Asia", 
@@ -29,22 +29,22 @@
 ["172.104.226.236", "172-104-226-236.devast.io", "443", 1, "PVP - sniper - bunkerPRIV", 
 7
 ],
-["172.105.91.68", "devast22.devast.io", "443", 1, "LAPA PLZ UPDATE", 
+["172.105.91.68", "devast22.devast.io", "443", 1, "LAPA PLZ UPDATEPRIV", 
 10
 ],
-["45.79.39.212", "devast69.devast.io", "443", 1, "dont wake up alive", 
+["45.79.39.212", "devast69.devast.io", "443", 1, "[Computer01 Server] dont wake up alivePRIV", 
 141
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["139.162.251.205", "devast115.devast.io", "443", 1, "FUN GAME-[Sandbox-Pvp-And more]", 
+["139.162.251.205", "devast115.devast.io", "443", 1, "FUN GAME-[Sandbox-Pvp-And more]]PRIV", 
 7
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["178.79.178.54", "devast137.devast.io", "443", 1, "Pawels server PvP 20x", 
+["178.79.178.54", "devast137.devast.io", "443", 1, "Pawels server I PvP 20x PRIV", 
 12
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
@@ -59,7 +59,7 @@
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["139.162.132.133", "devast184.devast.io", "443", 1, "no water on this Server", 
+["139.162.132.133", "devast184.devast.io", "443", 1, "no water on this ServerPRIV", 
 18
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
@@ -68,7 +68,7 @@
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["50.116.49.137", "devast193.devast.io", "443", 1, "Friendlys Super Sandbox", 
+["50.116.49.137", "devast193.devast.io", "443", 1, "Friendlys Super SandboxPRIV", 
 10
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
