@@ -6,4 +6,4 @@ DevastMod by HypR Clan  |  Vision Hack, Build on Roads, Autorun, Disabled Ads, S
 
 This is a Hacked Client version of devastio game
 
-![DevastMod.org](https://raw.githubusercontent.com/DevastMod/DevastMod.github.io/main/img/HypR-Modded-Github.png)
+![DevastMod.org](https://raw.githubusercontent.com/DevastMod/DevastMod.github.io/main/img/DevastMod_banned.png)
