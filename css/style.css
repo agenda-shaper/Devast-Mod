@@ -28,7 +28,7 @@ input#passwordInput {
     border-style: solid;
     border-width: 10px;
     border-color: black;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -62,7 +62,7 @@ input#nicknameInput {
     border-style: solid;
     border-width: 10px;
     border-color: black;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -117,7 +117,7 @@ div#serverList {
     font-family: 'Viga', sans-serif;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
+    border-radius: 50px;
     border: black 3px solid;
     background-color: #bcb33e;
     image-rendering: -moz-crisp-edges;
