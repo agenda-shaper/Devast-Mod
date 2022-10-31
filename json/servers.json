@@ -44,10 +44,7 @@
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["178.79.178.54", "devast137.devast.io", "443", 1, "Pawel ServerPRIV", 
-10
-],
-["???", "???", "443", 1, "lmHIDDEN", 
+["178.79.178.54", "devast137.devast.io", "443", 1, "Pawel ServerHIDDEN", 
 1
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
@@ -59,16 +56,19 @@
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["139.162.132.133", "devast184.devast.io", "443", 1, "No WaterPRIV", 
-10
-],
 ["???", "???", "443", 1, "lmHIDDEN", 
+1
+],
+["139.162.132.133", "devast184.devast.io", "443", 1, "No WaterHIDDEN", 
 1
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["50.116.49.137", "devast193.devast.io", "443", 1, "[ELMAS]New Super SandboxPRIV", 
+["???", "???", "443", 1, "lmHIDDEN", 
+1
+],
+["50.116.49.137", "devast193.devast.io", "443", 1, "Elmas ServerPRIV", 
 100
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
