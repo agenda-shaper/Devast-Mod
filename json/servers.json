@@ -59,7 +59,10 @@
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["139.162.132.133", "devast184.devast.io", "443", 1, "No WaterPRIV", 
+["139.162.132.133", "devast184.devast.io", "443", 1, "No WaterHIDDEN", 
+100
+],
+["139.162.132.133", "devast184.devast.io", "443", 1, "DevastMod SandboxPRIV", 
 100
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
@@ -68,7 +71,7 @@
 ["???", "???", "443", 1, "lmHIDDEN", 
 1
 ],
-["50.116.49.137", "devast193.devast.io", "443", 1, "DevastMod SandboxHIDDEN", 
+["50.116.49.137", "devast193.devast.io", "443", 1, "DevastMod FullGearHIDDEN", 
 1
 ],
 ["???", "???", "443", 1, "lmHIDDEN", 
