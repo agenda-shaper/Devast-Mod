@@ -4,6 +4,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0;
+    background-image: url("https://media1.giphy.com/media/mG2e3FSVmiaZzcAM5C/giphy.gif?cid=790b76110d2acbaac0d4298e7cd8318e9d8c88ccdd24c1b0&rid=giphy.gif&ct=s");
+    background-color: #a99422;
     overflow: hidden;
 }
 
