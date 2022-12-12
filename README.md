@@ -1,9 +1,8 @@
-# <a href="https://devastmod.org/" class="button big">Play DevastMod.org</a>
-Devast.io Modded by:
- ```﹙HypR﹚𐍅ᗩᗰᗴƬᗴ```  
+# <a href="https://devastmod.org/" class="button big">DevastMod.org</a>
 
-DevastMod by HypR Clan  |  Vision Hack, Build on Roads, Autorun, Disabled Ads, See mines, camo and more
+RIP Devast.io
 
-This is a Hacked Client version of devastio game
+by:
+yamete 
 
 ![DevastMod.org](https://raw.githubusercontent.com/DevastMod/DevastMod.github.io/main/img/DevastMod_banned.png)
