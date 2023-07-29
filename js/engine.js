@@ -2713,7 +2713,7 @@ var WebSocketClient = (function () {
             var NnnNv = WebSocketClient.servers[WebSocketClient.NmV][vNNmW];
             websocket = new window.WebSocket((((("ws" + ((NnnNv === 1) ? "s" : "")) + "://") + ip) + ":") + port);
             */
-    var local = 1;
+    var local = 0;
     if (local) {
       websocket = new window.WebSocket(`ws://localhost:3000`);
     } else {
