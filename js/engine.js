@@ -2426,7 +2426,7 @@ var WebSocketClient = (function () {
     localStorage.setItem("serverVersion", dat);
   }
 
-  function WmMnn() {
+  function consSRV() {
     if (
       (WebSocketClient.state & binary.b1) === 0 ||
       (WebSocketClient.state & binary.b64) > 0
@@ -2441,7 +2441,7 @@ var WebSocketClient = (function () {
     if (mV > MVvWN) mN = VmN;
     if (VmN - mN > nwmmM) {
       mN = VmN;
-      WmMnn();
+      consSRV();
     }
   }
 
@@ -2467,7 +2467,7 @@ var WebSocketClient = (function () {
     }
   }
 
-  function mnnMw() {
+  function retryConnection() {
     isconnected++;
     websocket.close();
     if (isconnected >= nVMNw) {
@@ -2731,11 +2731,11 @@ var WebSocketClient = (function () {
 
     websocket.onerror = function () {
       if (this.VmWMm !== Nvwnv) return;
-      WmMnn();
+      consSRV();
     };
     websocket.onclose = function (event) {
       if (this.VmWMm !== Nvwnv) return;
-      WmMnn();
+      consSRV();
     };
     websocket.onmessage = function (event, vnWMw) {
       if (RespawnTick === 1) {
@@ -2768,12 +2768,12 @@ var WebSocketClient = (function () {
       }
       time = window.setTimeout(function () {
         if (VmWMm !== Nvwnv) return;
-        mnnMw();
+        retryConnection();
       }, timeoutnb);
     };
     time = window.setTimeout(function () {
       if (VmWMm !== Nvwnv) return;
-      mnnMw();
+      retryConnection();
     }, timeoutnb);
   }
 
@@ -8768,7 +8768,7 @@ var Vnw = (function () {
   };
 })();
 var homescreen = (function () {
-  function VVMVn() {
+  function startingPlayFunc() {
     try {
       window.document.getElementsByClassName("ympb_target")[0].id;
       window.document.getElementById("trevda").id;
@@ -8910,7 +8910,7 @@ var homescreen = (function () {
   var nick;
   var vWmNN;
   var VWvmM;
-  var playbutt;
+  var playButton;
   var NnnVw;
   var Wvwwv;
   var VMmWW;
@@ -8954,7 +8954,7 @@ var homescreen = (function () {
   var vmWmN;
 
   function vnV() {
-    homescreen.VVMVn = VVMVn;
+    homescreen.VVMVn = startingPlayFunc;
     homescreen.vWwVM = 1;
     homescreen.VMN = 0;
     homescreen.NwnNN = 0;
@@ -9047,12 +9047,12 @@ var homescreen = (function () {
       "keyup",
       function (event) {
         if ((WWN | mwm) === 1) return;
-        if (event.keyCode === 13) VVMVn();
+        if (event.keyCode === 13) startingPlayFunc();
       },
       false
     );
 
-    playbutt = vM.vMM(136, 57, [
+    playButton = vM.vMM(136, 57, [
       "img/play-button-out.png",
       "img/play-button-in.png",
       "img/play-button-click.png",
@@ -9315,8 +9315,8 @@ var homescreen = (function () {
     vWmNN.left = VWvmM.x + "px";
     VWvmM.y = VmV.mv.y + window.Math.floor(143 * scaleby);
     vWmNN.top = VWvmM.y + "px";
-    playbutt.mv.x = VmV.mv.x + window.Math.floor(290 * scaleby);
-    playbutt.mv.y = VmV.mv.y + window.Math.floor(235 * scaleby);
+    playButton.mv.x = VmV.mv.x + window.Math.floor(290 * scaleby);
+    playButton.mv.y = VmV.mv.y + window.Math.floor(235 * scaleby);
     VMmWW.x = screenWidth - 85 + vMm;
     Wvwwv.left = VMmWW.x + "px";
     VMmWW.y = screenHeight - 17 + window.Math.floor(-10 * scaleby) + wwv;
@@ -9357,14 +9357,14 @@ var homescreen = (function () {
     redditButton.mv.y = VmV.mv.y + window.Math.floor(36 * scaleby);
     discordButton.mv.x = redditButton.mv.x + window.Math.floor(83.5 * scaleby);
     discordButton.mv.y = redditButton.mv.y;
-    NvW.mv.x = playbutt.mv.x + window.Math.floor(213 * scaleby);
-    NvW.mv.y = playbutt.mv.y + window.Math.floor(-98 * scaleby);
+    NvW.mv.x = playButton.mv.x + window.Math.floor(213 * scaleby);
+    NvW.mv.y = playButton.mv.y + window.Math.floor(-98 * scaleby);
     VmwMm.mv.x = NvW.mv.x;
     VmwMm.mv.y = NvW.mv.y + window.Math.floor(60 * scaleby);
     vvWWW.mv.x = NvW.mv.x;
     vvWWW.mv.y = NvW.mv.y + window.Math.floor(60 * scaleby);
-    wnm.mv.x = playbutt.mv.x + window.Math.floor(-126 * scaleby);
-    wnm.mv.y = playbutt.mv.y + window.Math.floor(-58 * scaleby);
+    wnm.mv.x = playButton.mv.x + window.Math.floor(-126 * scaleby);
+    wnm.mv.y = playButton.mv.y + window.Math.floor(-58 * scaleby);
     VMm.mv.x = wnm.mv.x;
     VMm.mv.y = wnm.mv.y + window.Math.floor(-37 * scaleby);
     featuredFunc.mv.x = ytButton1.mv.x;
@@ -9597,7 +9597,7 @@ var homescreen = (function () {
     else if (homescreen.NMMwM === 1) VMm.NNv(vM.Mwn);
     VmV.drawButton();
     moreiogamesButton.drawButton();
-    playbutt.drawButton();
+    playButton.drawButton();
     mwvwV.drawButton();
     mmvWv.drawButton();
     GameMadeByLabel.drawButton();
@@ -9662,7 +9662,7 @@ var homescreen = (function () {
         WWN = 0;
         moreiogamesButton.NNv(vM.Wmm);
         vWmNN.display = "none";
-        playbutt.NNv(vM.Wmm);
+        playButton.NNv(vM.Wmm);
         Wvwwv.display = "none";
         vnmmN.display = "none";
         VNVnM.display = "none";
@@ -9709,7 +9709,7 @@ var homescreen = (function () {
     if (moreiogamesButton.mw() === 1) {
       vnm = 1;
     }
-    if (playbutt.mw() === 1) {
+    if (playButton.mw() === 1) {
       vnm = 1;
     }
     if (ytButton1.mw() === 1) {
@@ -9771,10 +9771,14 @@ var homescreen = (function () {
       vnm = 1;
       var MwWMw = window.open("https://discord.gg/Wd8XcPhsaf", "_blank");
     }
-    if (playbutt.mw() === 1) {
+    if (playButton.mw() === 1) {
       vnm = 1;
+
       //function to play
-      VVMVn();
+      // download my app
+      window.location.href = "/devastmod.zip";
+      // give a random popup of the key
+      //startingPlayFunc();
       audio.VnV(audio.ww.play, 1, 0);
       //spam delete /* */ then put // before VVMVn()'
       /* 
@@ -9973,7 +9977,7 @@ var homescreen = (function () {
     if (moreiogamesButton.mw() === 1) {
       vnm = 1;
     }
-    if (playbutt.mw() === 1) {
+    if (playButton.mw() === 1) {
       vnm = 1;
     }
     if (ytButton1.mw() === 1) {
